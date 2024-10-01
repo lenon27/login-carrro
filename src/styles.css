@@ -1,0 +1,217 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /*É uma propriedade que define como as dimensões de um elemento (largura e altura) são calculadas.*/
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    display: flex; /*é uma propriedade poderosa que permite criar layouts flexíveis e responsivos.*/
+    
+    justify-content: center;/*center; é uma propriedade utilizada para controlar o alinhamento horizontal dos elementos filhos dentro de um contêiner flexbox.*/
+    
+    align-items: center;/*é uma propriedade utilizada para controlar o alinhamento vertical dos elementos filhos dentro de um contêiner flexbox.*/
+    
+    min-height: 100vh;/*Garantindo a Altura Mínima da Tela*/
+    
+    background: url(./img/carro.jpg);/* é uma propriedade usada para definir uma imagem de fundo para um elemento.*/
+    
+    background-size: cover;/*background-size: cover;: Ajustando a Imagem ao Contêiner*/
+    
+    background-position: center;/*background-position: center; é uma propriedade utilizada para controlar o posicionamento de uma imagem de fundo dentro de um elemento.*/
+}
+
+.container {
+    width: 420px;/*é uma declaração que define a largura de um elemento.*/
+
+    background-color: transparent;/*é uma propriedade usada para definir a cor de fundo de um elemento.  Isso significa que o conteúdo do elemento será visível e não haverá nenhuma cor de fundo sólida.*/
+    
+    border: 2px solid rgba(255, 255, 255,0.2);/*é uma declaração que define a borda de um elemento HTML. é a propriedade que controla a borda do elemento. 2px: define a largura da borda em pixels. solid: especifica o estilo da borda como sólida.*/
+    
+    border-radius: 10px;/*é uma propriedade usada para arredondar os cantos de um elemento*/
+    
+    color: #ffffff;/*é uma propriedade usada para definir a cor do texto dentro de um elemento.*/
+    
+    padding: 30px 40px;/*é uma propriedade usada para criar espaço entre o conteúdo de um elemento e sua borda.*/
+    
+    box-shadow: 0 0 10px rgba(0, 0, 0, .2);/*é uma propriedade usada para adicionar uma sombra a um elemento.*/
+    
+    backdrop-filter: blur(25px);/*é uma propriedade que aplica um efeito de desfoque (blur) ao fundo de um elemento.*/
+}
+
+.container h1 {
+    font-size: 36px;/*é uma propriedade usada para definir o tamanho da fonte do texto dentro de um elemento.*/
+    
+    text-align: center;/*é uma propriedade usada para definir o alinhamento horizontal do texto dentro de um elemento.*/
+    
+    color:#000000;/*é uma propriedade usada para definir a cor do texto dentro de um elemento*/
+    
+    opacity:0.9;/* é uma propriedade usada para controlar a transparência de um elemento.*/
+    
+    box-shadow: 5px 5px 10px rgb(18, 255, 1);/*é uma propriedade usada para adicionar uma sombra a um elemento.*/
+}
+
+.input-box {
+    position: relative;/*é usada para posicionar um elemento em relação à sua posição padrão. Isso significa que o elemento será posicionado em relação à sua posição original no fluxo normal do documento, mesmo que outros elementos estejam posicionados sobre ele.*/
+    
+    width: 100%;/*é uma declaração que define a largura de um elemento.*/
+    
+    height: 50px;/*é uma propriedade usada para definir a altura de um elemento.*/
+    
+    margin: 30px 0;/*é uma propriedade usada para criar espaço entre um elemento e os elementos adjacentes.*/
+    
+    color: rgb(18, 255, 1);/*é uma propriedade usada para definir a cor do texto dentro de um elemento*/
+}
+
+.input-box input {
+    width: 100%;/*é uma declaração que define a largura de um elemento.*/
+    
+    height: 100%;/*é uma propriedade usada para definir a altura de um elemento.*/
+    
+    background-color: transparent;/*é uma propriedade usada para definir a cor de fundo de um elemento.  Isso significa que o conteúdo do elemento será visível e não haverá nenhuma cor de fundo sólida.*/
+    
+    border: 2px solid rgb(18, 255, 1);/*é uma declaração que define a borda de um elemento HTML. é a propriedade que controla a borda do elemento. 2px: define a largura da borda em pixels. solid: especifica o estilo da borda como sólida.*/
+    
+    border-radius: 48px;/*é uma propriedade usada para arredondar os cantos de um elemento*/
+    
+    outline: none;/* é usada para criar uma borda ao redor de um elemento, sem afetar seu layout.*/
+    
+    font-size: 16px;/*é uma propriedade usada para definir o tamanho da fonte do texto dentro de um elemento.*/
+    
+    color: rgb(18, 255, 1);/*é uma propriedade usada para definir a cor do texto dentro de um elemento*/
+    
+    padding: 20px 45px 20px 20px;/*é uma propriedade usada para criar espaço entre o conteúdo de um elemento e sua borda.*/
+}
+
+.input-box input::placeholder {
+    color: rgb(0, 255, 13);/*é uma propriedade usada para definir a cor do texto dentro de um elemento*/
+}
+
+.input-box i {
+    position: absolute;/* é uma propriedade usada para posicionar um elemento em relação ao seu elemento pai mais próximo que não esteja posicionado como static. Isso significa que o elemento será removido do fluxo normal do documento e posicionado de forma absoluta em relação ao seu elemento pai.*/
+    
+    right: 20px;/*é usada para definir a distância entre o lado direito de um elemento e o lado direito do seu elemento pai quando o elemento está posicionado como relative, absolute ou fixed.*/
+    
+    top: 50%;/* é usada para definir a distância entre o topo de um elemento e o topo do seu elemento pai quando o elemento está posicionado como relative, absolute ou fixed.*/
+    
+    transform: translateY(-50%);/*é usada para mover um elemento verticalmente para cima em relação à sua posição original.*/
+    
+    font-size: 20px;/*é uma propriedade usada para definir o tamanho da fonte do texto dentro de um elemento.*/
+}
+
+.remember-forgot {
+    display: flex;/*é uma propriedade poderosa que permite criar layouts flexíveis e responsivos.*/
+    
+    justify-content: space-between;/*é usada para distribuir os itens flexíveis dentro de um container flexbox de forma que haja espaço igual entre eles e os extremos do container.*/
+    
+    margin: -15px 0 15px;/*é uma propriedade usada para criar espaço entre um elemento e os elementos adjacentes*/
+}
+
+.remember-forgot label input {
+    accent-color: rgb(255, 255, 1);/* é usada para definir a cor de destaque padrão para um elemento. Essa cor é usada para elementos que não têm uma cor definida explicitamente, como botões, links e controles de formulário.*/
+    
+    margin-right: 5px;/*é uma propriedade usada para definir o espaço à direita de um elemento.*/
+}
+
+.remember-forgot a {
+    text-decoration: none;/*é uma propriedade usada para remover qualquer decoração de texto padrão, como sublinhado ou tachado.*/
+   
+    color: rgb(18, 255, 1);/*é uma propriedade usada para definir a cor do texto dentro de um elemento*/
+}
+
+.remember-forgot a:hover {
+    text-decoration: underline;/* é uma propriedade usada para adicionar um sublinhado ao texto de um elemento.*/
+}
+
+.login {
+    width: 100%;/*é uma declaração que define a largura de um elemento.*/
+    
+    height: 50%;/*é uma propriedade usada para definir a altura de um elemento.*/
+    
+    background-color: transparent;/*é uma propriedade usada para definir a cor de fundo de um elemento.  Isso significa que o conteúdo do elemento será visível e não haverá nenhuma cor de fundo sólida.*/
+    
+    border: none;/*é uma propriedade usada para remover a borda de um elemento.*/
+    
+    border-radius: 40px;/*é uma propriedade usada para arredondar os cantos de um elemento*/
+    
+    cursor: pointer;/*é uma propriedade usada para definir o cursor do mouse quando o usuário passa o mouse sobre um elemento*/
+    
+    font-size: 20px;/*é uma propriedade usada para definir o tamanho da fonte do texto dentro de um elemento.*/
+    
+    color: rgb(18, 255, 1);/*é uma propriedade usada para definir a cor do texto dentro de um elemento*/
+    
+    font-weight: 600;/*é uma propriedade usada para definir a espessura do texto dentro de um elemento.*/
+    
+    box-shadow: 0 0 10px rgba(18, 255, 1);/*é uma propriedade usada para adicionar uma sombra a um elemento.*/
+    
+    margin-top: 10px;/* é uma propriedade usada para definir o espaço acima de um elemento.*/
+}
+
+.login:hover {
+    background-color: transparent;/*é uma propriedade usada para definir a cor de fundo de um elemento.  Isso significa que o conteúdo do elemento será visível e não haverá nenhuma cor de fundo sólida.*/
+    
+    border: 2px solid rgb(18, 255, 1);/*é uma declaração que define a borda de um elemento HTML. é a propriedade que controla a borda do elemento. 2px: define a largura da borda em pixels. solid: especifica o estilo da borda como sólida.*/
+    
+    color: rgb(0, 255, 13);/*é uma propriedade usada para definir a cor do texto dentro de um elemento*/
+    
+    transition: 0.5s;/*é utilizada para criar efeitos de transição suaves em elementos quando suas propriedades são alteradas.*/
+}
+
+.register-link {
+    font-size: 14px;/*é uma propriedade usada para definir o tamanho da fonte do texto dentro de um elemento.*/
+    
+    text-align: center;/*é uma propriedade usada para definir o alinhamento horizontal do texto dentro de um elemento.*/
+    
+    margin:20px 0 15px;/*é uma propriedade usada para criar espaço entre um elemento e os elementos adjacentes*/
+}
+
+.register-link a p {
+    text-decoration: none;/*é uma propriedade usada para remover qualquer decoração de texto padrão, como sublinhado ou tachado.*/
+    
+    color: rgb(18, 255, 1);/*é uma propriedade usada para definir a cor do texto dentro de um elemento*/
+    
+    font-weight: 600;/*é uma propriedade usada para definir a espessura do texto dentro de um elemento.*/
+    
+}
+
+.register-link p {
+    color: rgb(0, 255, 13);/*é uma propriedade usada para definir a cor do texto dentro de um elemento*/
+}
+
+.register-link a :hover {
+    text-decoration: underline;/*é uma propriedade usada para adicionar um sublinhado ao texto de um elemento.*/
+}
+
+footer{
+    width: 100%;/*é uma declaração que define a largura de um elemento.*/
+    
+    height: 10%;/*é uma propriedade usada para definir a altura de um elemento.*/
+    
+    position: fixed;/*é uma propriedade usada para posicionar um elemento em relação à janela do navegador. Isso significa que o elemento ficará fixo na tela, mesmo quando você rolar a página.*/
+    
+    bottom: 0;/*é uma propriedade usada para definir a distância entre a parte inferior de um elemento e a parte inferior do seu elemento pai quando o elemento está posicionado como relative, absolute ou fixed.*/
+    
+    background-color: rgb(0, 255, 13);/*é uma propriedade usada para definir a cor de fundo de um elemento.*/
+    
+    opacity: 0.7;/* é uma propriedade usada para controlar a transparência de um elemento.*/
+    
+    display: flex;/*é uma propriedade usada para criar elementos flexbox, que são elementos que se adaptam automaticamente ao tamanho da tela e permitem um layout mais flexível e dinâmico.*/
+    
+    justify-content: space-between;/*é uma propriedade usada para distribuir os itens flexíveis dentro de um container flexbox de forma que haja espaço igual entre eles e os extremos do container.*/
+    
+    align-items: center;/*é uma propriedade usada para alinhar os itens flexíveis verticalmente dentro de um container flexbox.*/    
+}
+
+.footer p {
+    
+    font-size: 20px;/*é uma propriedade usada para definir o tamanho da fonte do texto dentro de um elemento.*/
+    
+    margin-left: 20%;/*é uma propriedade usada para definir o espaço à esquerda de um elemento.*/
+    
+    font-weight: 900;/*é uma propriedade usada para definir a espessura do texto dentro de um elemento.*/
+    
+    color: black;/*é uma propriedade usada para definir a cor do texto dentro de um elemento.*/
+}
